@@ -1,104 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FAQ | Critism's Voucher</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ | Critism's Voucher</title>
 
-<style>
-:root{
-    --bg-color:#1e1f22;
-    --card-color:#2b2d31;
-    --text-color:#f2f3f5;
-    --text-muted:#b5bac1;
-    --blurple:#5865F2;
-}
-
-body{
-    font-family:Segoe UI,sans-serif;
-    background:var(--bg-color);
-    color:var(--text-color);
-    margin:0;
-}
-
-.container{
-    max-width:900px;
-    margin:auto;
-    padding:40px 20px;
-}
-
-h1{
-    text-align:center;
-    margin-bottom:40px;
-}
-
-.faq-item{
-    background:var(--card-color);
-    margin-bottom:15px;
-    border-radius:8px;
-    overflow:hidden;
-}
-
-.faq-item summary{
-    padding:18px;
-    cursor:pointer;
-    font-weight:600;
-    font-size:1rem;
-}
-
-.faq-item p{
-    padding:0 18px 18px;
-    color:var(--text-muted);
-    line-height:1.6;
-}
-
-.back-btn{
-    display:inline-block;
-    margin-top:30px;
-    padding:12px 24px;
-    background:var(--blurple);
-    color:white;
-    text-decoration:none;
-    border-radius:6px;
-}
-
-.back-btn:hover{
-    opacity:.9;
-}
-</style>
+    <!-- CSS EINBINDUNG -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <div class="container">
 
-<h1>📚 Frequently Asked Questions</h1>
+    <h1>📚 Frequently Asked Questions</h1>
 
-<details class="faq-item">
-    <summary>How do I setup the bot?</summary>
-    <p>Invite the bot and run /setup to configure voucher logging.</p>
-</details>
+    <div class="faq-container">
 
-<details class="faq-item">
-    <summary>Why are slash commands not showing?</summary>
-    <p>It may take a few minutes for Discord to sync commands. Reinviting the bot can also help.</p>
-</details>
+        <details class="faq-item">
+            <summary>⚙️ How do I setup the bot?</summary>
+            <p>Invite the bot and run /setup to configure everything automatically.</p>
+        </details>
 
-<details class="faq-item">
-    <summary>Why is voucher logging not working?</summary>
-    <p>Make sure Critism's Voucher has all required permissions in your server.</p>
-</details>
+        <details class="faq-item">
+            <summary>❓ Why are slash commands not showing?</summary>
+            <p>Discord may take a few minutes to sync commands. Reinviting the bot can help.</p>
+        </details>
 
-<details class="faq-item">
-    <summary>Is Critism's Voucher free?</summary>
-    <p>Yes. All core features are currently available for free.</p>
-</details>
+        <details class="faq-item">
+            <summary>🎫 How do vouchers work?</summary>
+            <p>Users can create and manage vouchers using slash commands in your server.</p>
+        </details>
 
-<details class="faq-item">
-    <summary>Where can I get support?</summary>
-    <p>Visit the Support page or join our Discord support server.</p>
-</details>
+        <details class="faq-item">
+            <summary>🟢 Is the bot free?</summary>
+            <p>Yes, all core features are completely free.</p>
+        </details>
 
-<a href="index.html" class="back-btn">🏠 Back to Home</a>
+    </div>
+
+    <a class="back-btn" href="index.html">🏠 Back to Home</a>
 
 </div>
 
