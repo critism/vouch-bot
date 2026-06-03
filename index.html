@@ -242,6 +242,44 @@
         footer { padding: 30px; background: #111214; font-size: 0.9rem; margin-top: 40px; }
         footer a { color: var(--blurple); text-decoration: none; margin: 0 10px; font-weight: 500; }
         footer a:hover { text-decoration: underline; }
+/* ANNOUNCEMENTS */
+.announcements {
+    margin-bottom: 50px;
+}
+
+.announcement-card {
+    background: var(--card-color);
+    border: 1px solid #3f4147;
+    border-left: 4px solid var(--blurple);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: left;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+.announcement-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--blurple);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.announcement-title {
+    color: var(--blurple);
+    margin: 0 0 8px 0;
+    font-size: 1.1rem;
+}
+
+.announcement-date {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    margin-bottom: 10px;
+}
+
+.announcement-content {
+    color: var(--text-muted);
+    line-height: 1.6;
+}
     </style>
 </head>
 <body>
