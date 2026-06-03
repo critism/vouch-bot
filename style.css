@@ -83,3 +83,138 @@ h1 {
         transform: translateY(0);
     }
 }
+:root {
+    --bg-color: #1e1f22;
+    --card-color: #2b2d31;
+    --text-color: #f2f3f5;
+    --text-muted: #b5bac1;
+    --blurple: #5865F2;
+    --blurple-hover: #4752c4;
+    --secondary-btn: #4e5058;
+    --secondary-hover: #6d6f78;
+    --success: #23a55a;
+}
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    text-align: center;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: #111214;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.brand {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.btn {
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+.btn-blurple {
+    background: var(--blurple);
+}
+
+.btn-blurple:hover {
+    background: var(--blurple-hover);
+}
+
+.btn-secondary {
+    background: var(--secondary-btn);
+}
+
+.btn-secondary:hover {
+    background: var(--secondary-hover);
+}
+
+.btn-dashboard {
+    background: var(--blurple);
+    box-shadow: 0 0 15px rgba(88,101,242,0.4);
+}
+
+.btn-dashboard:hover {
+    background: var(--blurple-hover);
+    box-shadow: 0 0 25px rgba(88,101,242,0.6);
+}
+.dropdown {
+    position: relative;
+}
+
+.dropbtn {
+    background: var(--secondary-btn);
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background: var(--card-color);
+    min-width: 180px;
+    border-radius: 6px;
+    border: 1px solid #3f4147;
+    z-index: 1000;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background: var(--blurple);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.subtitle {
+    color: var(--text-muted);
+}
+.card, .stat-card {
+    background: var(--card-color);
+    border: 1px solid #3f4147;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+
+.card:hover, .stat-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--blurple);
+}
