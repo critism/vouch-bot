@@ -280,13 +280,95 @@
     color: var(--text-muted);
     line-height: 1.6;
 }
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Dropdown */
+.dropdown {
+    position: relative;
+}
+
+.dropbtn {
+    background: var(--secondary-btn);
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.dropbtn:hover {
+    background: var(--secondary-hover);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background: var(--card-color);
+    min-width: 180px;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid #3f4147;
+    z-index: 1000;
+}
+
+.dropdown-content a {
+    display: block;
+    color: white;
+    padding: 12px 15px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.dropdown-content a:hover {
+    background: var(--blurple);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Support Button */
+.support-btn {
+    padding: 10px 18px;
+    background: var(--success);
+}
+
+.support-btn:hover {
+    background: #1e8e4e;
+}
     </style>
 </head>
 <body>
 
     <div class="navbar">
-        <div class="brand">Critism's Voucher</div>
+    <div class="brand">Critism's Voucher</div>
+
+    <div class="nav-links">
+        <div class="dropdown">
+            <button class="dropbtn">Menu ▼</button>
+            <div class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="commands.html">Commands</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="tos.html">Terms of Service</a>
+            </div>
+        </div>
+
+        <a class="btn btn-secondary support-btn"
+           href="https://discord.gg/DEIN_INVITE_LINK"
+           target="_blank">
+           Support Server
+        </a>
     </div>
+</div>
+    
     <div class="container">
         <h1>Critism's Voucher</h1>
         <p class="subtitle">The ultimate bot to enhance your Discord server.</p>
